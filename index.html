@@ -30,8 +30,9 @@
     </tr>
     <tr>
         <td class="digitalButton" onclick="displayDigits(0)">0</td>
-        <td class="digitalButton" onclick="operation('/')">/</td>
-        <td class="ACButton" onclick="acButton()" colspan="2" >AC</td>
+        <td class="operatorButton" onclick="operation('/')">/</td>
+        <td class="operatorButton" onclick="operation('^')">^</td>
+        <td class="ACButton" onclick="acButton()">AC</td>
 
     </tr>
     <tr>
@@ -80,6 +81,10 @@
                 break;
             case "-":
                 finalanswer=value1-value2;
+                break;
+            case "^":
+                finalanswer=value2**value2;
+                break;
             
             
         }
